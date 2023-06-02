@@ -1,9 +1,6 @@
----
-author:
-- Amritesh Pandey (22-14-02)
-date: 30-05-2023
-title: Drought Prediction Using Various ML Algorithms
----
+
+# Drought Prediction Using Various ML Algorithms
+
 
 # Introduction
 
@@ -178,7 +175,7 @@ and outliers within a single variable.
     and meaningful way, allowing researchers, analysts, and
     decision-makers to interpret and draw conclusions from the data.
 
-::: {#tab:descriptive_statistics}
+Table: discriptive_statistics
 | Variable   | Count     | Mean    | Std. Dev. | Min    | 25th Percentile | Median | 75th Percentile | Max    | Skewness   | Kurtosis    |
 | ---------- | --------- | ------- | --------- | ------ | --------------- | ------ | --------------- | ------ | ---------- | ----------- |
 | fips       | 2,756,796 | 30,670.38 | 14,979.11 | 1,001.00 | 19,044.50        | 29,260.50 | 46,007.50        | 56,043.00 | -0.077367  | -1.100136   |
@@ -204,69 +201,117 @@ and outliers within a single variable.
 | year       | 2,756,796 | 2007.97 | 4.90      | 2000.00 | 2004.00         | 2008.00 | 2012.00         | 2016.00   | -0.000183  | -1.208783   |
 | month      | 2,756,796 | 6.53    | 3.45      | 1.00   | 4.00            | 7.00   | 10.00           | 12.00     | -0.008198  | -1.207511   |
 | day        | 2,756,796 | 15.72   | 8.80      | 1.00   | 8.00            | 16.00  | 23.00           | 31.00     | 0.006969   | -1.194293   |
-:::
+
+Table: date_statistics
+**Variable** | **Value**
+--- | ---
+count | 2,756,796
+unique | 887
+top | 2000-01-04
+freq | 3,108
+
 
 
 
 -   ***Distribution of continuous variables***
 
-    <figure id="fig:histogram Numerical">
-    <figure>
-    <img src="pic/hist/Distribution PRECTOT .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution PS .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution QV2M .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution T2M .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution T2M_MAX .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution T2M_MIN .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution T2M_RANGE .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution T2MDEW .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution T2MWET .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution TS .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS10M .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS10M_MAX .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS10M_MIN .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS10M_RANGE .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS50M .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS50M_MAX .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS50M_MIN .png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution WS50M_RANGE .png" />
-    </figure>
-    <figcaption>Histogram of Continuous Distribution</figcaption>
-    </figure>
+<figure id="fig:histogram Numerical">
+  <div style="display: flex; flex-wrap: wrap;">
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20PRECTOT%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20PS%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20QV2M%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20T2M%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20T2M_MAX%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20T2M_MIN%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20T2M_RANGE%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20T2MDEW%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20T2MWET%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20TS%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS10M%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS10M_MAX%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS10M_MIN%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS10M_RANGE%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS50M%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS50M_MAX%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS50M_MIN%20.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20WS50M_RANGE%20.png" />
+      </figure>
+    </div>
+  </div>
+  <figcaption>Histogram of Continuous Distribution</figcaption>
+</figure>
+
+
 
     To identify outliers in continuous data, the following methods are
     commonly used:
@@ -293,21 +338,32 @@ and outliers within a single variable.
 
 -   ***Distribution of categorical variables***
 
-    <figure id="fig:histogram Categorical">
-    <figure>
-    <img src="pic/hist/Distribution day.png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution month.png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution year.png" />
-    </figure>
-    <figure>
-    <img src="pic/hist/Distribution score.png" />
-    </figure>
-    <figcaption>Histogram of Categorical Distribution</figcaption>
-    </figure>
+<figure id="fig:histogram Categorical">
+  <div style="display: flex; flex-wrap: wrap;">
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20day.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20month.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20year.png" />
+      </figure>
+    </div>
+    <div style="flex: 33.33%; padding: 5px;">
+      <figure>
+        <img src="pic/hist/Distribution%20score.png" />
+      </figure>
+    </div>
+  </div>
+  <figcaption>Histogram of Categorical Distribution</figcaption>
+</figure>
+
 
     Though outliers are typically associated with continuous data,
     certain approaches can help identify unusual patterns or rare
@@ -876,11 +932,6 @@ they were giving worse results.***
 
 ## Performance Analysis
 
-The performance can be seen on the Table 3
-::: adjustbox
-width=<desired_width>
-
-::: {#tab:Performance metrics}
 | Algorithm                                     | Accuracy  | Precision | Recall   | F1 Score  | Cohen Kappa Score |
 | --------------------------------------------- | --------- | --------- | -------- | --------- | ----------------- |
 | Random Forest without resampling              | 0.808959  | 0.796925  | 0.808959 | 0.798690  | 0.654981          |
@@ -896,11 +947,6 @@ width=<desired_width>
 | Decision Tree with Near Miss Downsampling      | 0.224805  | 0.543185  | 0.224805 | 0.262600  | 0.078760          |
 | Decision Tree with Near Miss Downsampling and LDA | 0.204748 | 0.514249  | 0.204748 | 0.249713  | 0.057772          |
 | Decision Tree with Near Miss Downsampling and PCA | 0.189016 | 0.520894  | 0.189016 | 0.224072  | 0.059722          |
-:::
-
-: Performance metrics
-:::
-:::
 
 
 # Conclusion
