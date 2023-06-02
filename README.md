@@ -1,1 +1,0 @@
-# Drought-Prediction-using-Various-ML-Algorithm
